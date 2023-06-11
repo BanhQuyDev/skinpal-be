@@ -44,11 +44,11 @@ chatRoutes(app);
 blogRoutes(app);
 voucherRoutes(app);
 skintypeRoutes(app)
-server.listen(port, process.env.IP || "localhost", function () {
+app.listen(port, () => {
   console.log("Starting server at port : " + port);
 });
 app.get("/", (req, res) => {
-  res.send("index");
+  res.json("index");
 });
 
 //ERROR HANDLER
