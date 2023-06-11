@@ -16,7 +16,7 @@ const blogRoutes = require("./routes/blogRoutes");
 const voucherRoutes = require("./routes/voucherRoutes");
 const skintypeRoutes = require("./routes/skintypeRoutes");
 
-const port = process.env.PORT || 3000;
+const port = 3001
 app.use(express.json({ limit: "9000mb" }));
 app.use(express.urlencoded({ limit: "9000mb", extended: true }));
 app.use(logger("dev"));
