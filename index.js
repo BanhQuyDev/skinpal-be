@@ -44,7 +44,7 @@ chatRoutes(app);
 blogRoutes(app);
 voucherRoutes(app);
 skintypeRoutes(app)
-server.listen(3000, process.env.IP || "localhost", function () {
+server.listen(port, process.env.IP || "localhost", function () {
   console.log("Starting server at port : " + port);
 });
 app.get("/", (req, res) => {
